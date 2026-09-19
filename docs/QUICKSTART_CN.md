@@ -2,7 +2,7 @@
 
 本指南用于在几分钟内快速启动一个可用的 al-folio 网站，不涉及复杂的深度定制。
 
-> 视频教程：可以观看原项目提供的操作视频 `assets/video/tutorial_al_folio.mp4`。
+> 官方安装与部署说明见 [al-folio 文档](https://github.com/alshedivat/al-folio/tree/main/docs)。
 
 ## 第一步：创建仓库
 
@@ -22,7 +22,7 @@
 
 ### 本项目应采用的操作
 
-Gaohan Gao 的网站已经在本地基于官方模板完成，因此不要再次使用模板创建，直接创建一个空仓库即可：
+Han Gao（高晗）的网站已经在本地基于官方模板完成，因此不要再次使用模板创建，直接创建一个空仓库即可：
 
 - 仓库名：`gaohan0121.github.io`
 - 可见性：`Public`
@@ -60,8 +60,8 @@ baseurl:
 当前项目已经配置为：
 
 ```yaml
-title: Gaohan Gao
-first_name: Gaohan
+title: Han Gao
+first_name: Han
 last_name: Gao
 url: https://gaohan0121.github.io
 baseurl:

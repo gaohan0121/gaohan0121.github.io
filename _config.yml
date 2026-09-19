@@ -2,19 +2,19 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Gaohan Gao # the website title
-first_name: Gaohan
+title: Han Gao # the website title
+first_name: Han
 middle_name:
 last_name: Gao
 contact_note: >
   For research discussions and collaboration, email is the preferred contact method.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Academic homepage of Gaohan Gao, an undergraduate student in Software Engineering at Xi'an Jiaotong University,
+  Academic homepage of Han Gao, an undergraduate student in Software Engineering at Xi'an Jiaotong University,
   working on multimodal AI, remote sensing foundation models, vision-language learning, and agentic AI.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Gaohan Gao, multimodal large language models, remote sensing, vision-language learning, agentic AI
+keywords: Han Gao, 高晗, multimodal large language models, remote sensing, vision-language learning, agentic AI
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🎓 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
@@ -112,7 +112,7 @@ max_width: 930px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: profile.jpg # The site-wide (default for all links) Open Graph preview image
+og_image: /assets/img/profile.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -136,7 +136,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Gaohan Gao # blog_name will be displayed in your blog page
+blog_name: Han Gao # blog_name will be displayed in your blog page
 blog_description: Notes on multimodal AI and remote sensing
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
@@ -189,7 +189,15 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
+  books:
+    output: true
+  news:
+    defaults:
+      layout: post
+    output: true
   projects:
+    output: true
+  teachings:
     output: true
 
 # -----------------------------------------------------------------------------
@@ -212,10 +220,6 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
-  - _books/
-  - _news/
-  - _posts/
-  - _teachings/
   - AGENTS.md
   - al-folio-upgrade-report.md
   - bin/
@@ -230,7 +234,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
@@ -343,7 +346,7 @@ terser:
 
 scholar:
   last_name: [Gao]
-  first_name: [Gaohan, G.]
+  first_name: [Han, H.]
 
   style: apa
   locale: en
@@ -464,7 +467,7 @@ enable_cookie_consent: false # enables GDPR-compliant cookie consent dialog (htt
 enable_masonry: false # keeps project cards in a restrained academic grid
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
-enable_darkmode: false # fixed white background and black/gray typography
+enable_darkmode: true # allow visitors to switch between light and dark themes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)

@@ -1,8 +1,8 @@
-# Gaohan Gao Academic Homepage
+# Han Gao Academic Homepage
 
-这是 Gaohan Gao（高晗）的个人学术主页项目，基于官方 [al-folio](https://github.com/alshedivat/al-folio) 最新 `main` 分支生成，并使用 al-folio v1.x 的 gem 化运行时。
+这是 Han Gao（高晗）的个人学术主页项目，基于官方 [al-folio](https://github.com/alshedivat/al-folio) v1.x 模板与 gem 化运行时。
 
-网站定位为极简、白底、黑灰文字的学术主页，包含 About、Research、Publications、Projects 和 CV 五个页面。构建由 GitHub Actions 完成，生成的静态站点发布到 `gh-pages` 分支；不会使用 GitHub 默认的 Jekyll Pages 构建。
+网站定位为极简、学术风格主页，默认使用明亮主题并保留明暗模式切换。公开导航包含 Research、Publications、Projects、Repositories 和 CV；首页标题可返回 About 页面。构建由 GitHub Actions 完成，生成的静态站点发布到 `gh-pages` 分支；不会使用 GitHub 默认的 Jekyll Pages 构建。
 
 ## 项目结构
 
@@ -20,6 +20,7 @@
 │   ├── research.md
 │   ├── publications.md
 │   ├── projects.md
+│   ├── repositories.md
 │   └── cv.md
 ├── _projects
 │   ├── 01-hsicd.md
@@ -50,7 +51,7 @@
 - `_data/socials.yml`
 - `_pages/about.md`
 - `_data/cv.yml`
-- `scripts/create_cv.py`，随后重新生成 PDF
+- `_data/cv.yml`，随后运行 RenderCV 重新生成 PDF
 
 ### 3. 头像
 
@@ -67,20 +68,20 @@ profile:
 
 ### 4. CV
 
-`assets/pdf/CV.pdf` 是已根据当前公开信息生成的一页英文 Academic CV。若你已有正式 PDF，直接覆盖该文件即可，链接无需修改。
+`assets/pdf/CV.pdf` 由官方 al-folio 集成的 RenderCV 配置生成。网页 CV 与下载版 PDF 共享 `_data/cv.yml`，因此只需维护一份结构化内容。
 
-如需从脚本重新生成当前 PDF，请先安装 ReportLab，再运行：
+如需本地重新生成 PDF，请安装 RenderCV，再运行：
 
 ```bash
-python -m pip install reportlab
-python scripts/create_cv.py
+python -m pip install "rendercv[full]==2.8"
+rendercv render _data/cv.yml --settings assets/rendercv/settings.yaml --design assets/rendercv/design.yaml --locale-catalog assets/rendercv/locale.yaml
 ```
 
-网页 CV 的结构化内容位于 `_data/cv.yml`，PDF 和网页 CV 是两个独立文件；更新一方不会自动更新另一方。
+仓库中的 `Render a CV` GitHub Actions 工作流也会执行同一条生成命令，并把结果写入 `assets/pdf/CV.pdf`。
 
 ### 5. 论文作者、DOI 和链接
 
-由于目前没有提供完整作者列表、DOI、论文链接和正式发表信息，`_bibliography/papers.bib` 使用了 `Gaohan Gao and others`，且未虚构 DOI、PDF 或项目链接。论文状态变化后，请补充真实字段。
+由于目前没有提供完整作者列表、DOI、论文链接和正式发表信息，`_bibliography/papers.bib` 使用了 `Gao, Han and others`，且未虚构 DOI、PDF 或项目链接。论文状态变化后，请补充真实字段。
 
 ## 推荐部署方式
 
@@ -195,7 +196,7 @@ baseurl:
 
 ### 论文没有显示
 
-检查 BibTeX 是否位于 `_bibliography/papers.bib`，并确保 BibTeX 语法完整。作者姓名应包含 `Gao, Gaohan`，以便 al-folio 正确高亮本人姓名。
+检查 BibTeX 是否位于 `_bibliography/papers.bib`，并确保 BibTeX 语法完整。作者姓名应包含 `Gao, Han`，以便 al-folio 正确高亮本人姓名。
 
 ## 内容维护
 
@@ -203,6 +204,7 @@ baseurl:
 - 研究方向：`_pages/research.md`
 - 论文数据：`_bibliography/papers.bib`
 - 项目卡片：`_projects/*.md`
+- GitHub 展示：`_data/repositories.yml` 与 `_pages/repositories.md`
 - 网页 CV：`_data/cv.yml`
 - PDF CV：`assets/pdf/CV.pdf`
 - 邮箱与 GitHub：`_data/socials.yml`

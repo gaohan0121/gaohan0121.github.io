@@ -3,8 +3,6 @@ layout: about
 title: about
 permalink: /
 subtitle: Undergraduate Student in Software Engineering · Xi'an Jiaotong University
-nav: true
-nav_order: 1
 
 profile:
   align: left
@@ -24,7 +22,11 @@ latest_posts:
   enabled: false
 ---
 
-# Gaohan Gao <span lang="zh-CN">（高晗）</span>
+<style>
+  .post-header .post-title {
+    font-weight: 700;
+  }
+</style>
 
 **Undergraduate Student · Software Engineering**<br>
 **Xi'an Jiaotong University**
@@ -37,6 +39,8 @@ During my undergraduate study, I have conducted research under the supervision o
 
 My current research explores multimodal large language models for hyperspectral image change detection, cross-modal retrieval between SAR and optical images, and agent-based intelligent systems.
 
+<div style="clear: both;"></div>
+
 ## Research interests
 
 - Multimodal Large Language Models
@@ -45,9 +49,3 @@ My current research explores multimodal large language models for hyperspectral 
 - Hyperspectral Image Change Detection
 - SAR-RGB Cross-modal Retrieval
 - Agentic AI and Multi-Agent Systems
-
-## Contact
-
-- Email: [gaohan050121@outlook.com](mailto:gaohan050121@outlook.com)
-- GitHub: [github.com/gaohan0121](https://github.com/gaohan0121)
-- Curriculum Vitae: [Download CV]({{ '/assets/pdf/CV.pdf' | relative_url }})

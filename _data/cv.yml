@@ -1,86 +1,92 @@
 cv:
-  name: Gaohan Gao
-  label: Undergraduate Student in Software Engineering
+  name: Han Gao
+  headline: Undergraduate Researcher in Multimodal Artificial Intelligence
   email: gaohan050121@outlook.com
   location: Xi'an, Shaanxi, China
-  image: ""
-  summary: Undergraduate researcher working on multimodal artificial intelligence, remote sensing foundation models, vision-language learning, and agentic AI.
+  photo:
 
   social_networks:
     - network: GitHub
       username: gaohan0121
 
   sections:
+    Profile:
+      - Undergraduate student in Software Engineering at Xi'an Jiaotong University, conducting research on multimodal large language models, remote sensing foundation models, vision-language learning, and agentic AI.
+
     Education:
       - institution: Xi'an Jiaotong University
         location: Xi'an, Shaanxi, China
+        url: https://www.xjtu.edu.cn/
         area: Software Engineering
-        studyType: B.E.
+        degree: B.E.
         start_date: 2023-09
         end_date: present
+        highlights:
+          - Undergraduate student in the School of Electronics and Information Engineering.
 
     Research Experience:
       - company: Xi'an Jiaotong University
         position: Undergraduate Researcher
         location: Xi'an, Shaanxi, China
-        start_date: 2025-09
+        start_date: 2026-01
         end_date: present
-        summary: Conducting research under the supervision of Prof. Xiangyong Cao on multimodal learning and intelligent interpretation of remote sensing data.
+        summary: Multimodal large language models for hyperspectral image change detection.
         highlights:
-          - Multimodal large language models for hyperspectral image change detection
-          - Cross-modal retrieval between SAR and optical imagery
-          - Data preprocessing, ground-truth refinement, model implementation, experimental analysis, and paper writing
+          - Reframed pixel-level change detection as a vision-language question-answering task for semantic interpretation.
+          - Refined ground-truth labels and designed an automated pipeline for region-level captions and question-answer pairs.
+          - Adapted multimodal models with supervised fine-tuning and parameter-efficient fine-tuning, and conducted evaluation and analysis.
+
+      - company: Xi'an Jiaotong University
+        position: Undergraduate Researcher
+        location: Xi'an, Shaanxi, China
+        start_date: 2025-09
+        end_date: 2025-12
+        summary: Structure-aware SAR-RGB cross-modal image retrieval.
+        highlights:
+          - Investigated CLIP-style alignment and contrastive learning across heterogeneous sensing modalities.
+          - Implemented strip-convolution modules to capture elongated ship structures.
+          - Completed model training, hyperparameter tuning, ablation studies, and comparative analysis.
+
+      - company: Provincial Undergraduate Innovation Project
+        position: Core Team Member
+        location: Xi'an, Shaanxi, China
+        start_date: 2025-09
+        end_date: 2026-04
+        summary: Deep learning for cytological diagnosis of pleomorphic adenoma.
+        highlights:
+          - Contributed to literature review, technical planning, data preparation, model discussion, and experimental analysis.
 
     Publications:
       - title: "HSICD: Multimodal Large Language Model for Hyperspectral Image Change Detection"
         authors:
-          - Gaohan Gao
-          - and collaborators
-        publisher: IEEE Geoscience and Remote Sensing Magazine (under review)
-        releaseDate: Under review
+          - "*Han Gao*"
+          - et al.
+        journal: IEEE Geoscience and Remote Sensing Magazine (under review)
+        date: 2026
 
       - title: A Unified Algorithmic Framework for Battery Life Prediction Based on CTMC and Monte Carlo Simulation
         authors:
-          - Gaohan Gao
-          - and collaborators
-        publisher: MEEML 2026
-        releaseDate: 2026
-        summary: Co-first author.
+          - "*Han Gao*"
+          - et al.
+        journal: MEEML 2026
+        date: 2026
 
-    Projects:
-      - name: Multimodal Large Language Models for Hyperspectral Image Change Detection
-        summary: Developing multimodal models for hyperspectral remote sensing image understanding.
-        highlights:
-          - Multimodal large language models
-          - Remote sensing intelligence
-          - Change detection and vision-language alignment
-
-      - name: SAR-RGB Cross-modal Retrieval
-        summary: Exploring structural awareness and cross-modal representation learning between heterogeneous remote sensing images.
-        highlights:
-          - CLIP-based alignment
-          - Contrastive learning and strip convolution
-          - Cross-modal feature fusion
-
+    Selected Projects:
       - name: Multi-Agent Literature Research Assistant
-        summary: Developing an intelligent research assistant based on a multi-agent architecture.
+        start_date: 2026-03
+        end_date: present
+        summary: A tool-augmented multi-agent system for paper discovery, analysis, literature synthesis, and research knowledge management.
         highlights:
-          - Retrieval, analysis, and generation agents
-          - MCP, A2A, RAG, and tool-augmented agents
-          - Zotero and Obsidian knowledge-base synchronization
+          - Designed retrieval, analysis, and generation agents using MCP, A2A, and retrieval-augmented generation concepts.
+          - Integrated Zotero and Obsidian for research knowledge-base synchronization.
+          - Built agent tracing for observable coordination and tool-use workflows.
 
     Skills:
-      - name: Programming
-        level: Proficient
-        icon: fa-solid fa-code
-        keywords: "Python, C++, Java"
+      - label: Programming
+        details: Python, C++, Java
 
-      - name: Artificial Intelligence
-        level: Research
-        icon: fa-solid fa-brain
-        keywords: "PyTorch, Transformer, CLIP, LoRA, LLM fine-tuning"
+      - label: Artificial Intelligence
+        details: PyTorch, Transformers, CLIP, LoRA, supervised fine-tuning, parameter-efficient fine-tuning
 
-    Interests:
-      - name: Research
-        icon: fa-solid fa-microscope
-        keywords: "Multimodal LLMs, remote sensing foundation models, vision-language learning, hyperspectral change detection, SAR-RGB retrieval, agentic AI"
+      - label: Research Areas
+        details: Multimodal large language models, remote sensing, vision-language learning, hyperspectral change detection, cross-modal retrieval, agentic AI
