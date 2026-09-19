@@ -1,0 +1,86 @@
+cv:
+  name: Gaohan Gao
+  label: Undergraduate Student in Software Engineering
+  email: gaohan050121@outlook.com
+  location: Xi'an, Shaanxi, China
+  image: ""
+  summary: Undergraduate researcher working on multimodal artificial intelligence, remote sensing foundation models, vision-language learning, and agentic AI.
+
+  social_networks:
+    - network: GitHub
+      username: gaohan0121
+
+  sections:
+    Education:
+      - institution: Xi'an Jiaotong University
+        location: Xi'an, Shaanxi, China
+        area: Software Engineering
+        studyType: B.E.
+        start_date: 2023-09
+        end_date: present
+
+    Research Experience:
+      - company: Xi'an Jiaotong University
+        position: Undergraduate Researcher
+        location: Xi'an, Shaanxi, China
+        start_date: 2025-09
+        end_date: present
+        summary: Conducting research under the supervision of Prof. Xiangyong Cao on multimodal learning and intelligent interpretation of remote sensing data.
+        highlights:
+          - Multimodal large language models for hyperspectral image change detection
+          - Cross-modal retrieval between SAR and optical imagery
+          - Data preprocessing, ground-truth refinement, model implementation, experimental analysis, and paper writing
+
+    Publications:
+      - title: "HSICD: Multimodal Large Language Model for Hyperspectral Image Change Detection"
+        authors:
+          - Gaohan Gao
+          - and collaborators
+        publisher: IEEE Geoscience and Remote Sensing Magazine (under review)
+        releaseDate: Under review
+
+      - title: A Unified Algorithmic Framework for Battery Life Prediction Based on CTMC and Monte Carlo Simulation
+        authors:
+          - Gaohan Gao
+          - and collaborators
+        publisher: MEEML 2026
+        releaseDate: 2026
+        summary: Co-first author.
+
+    Projects:
+      - name: Multimodal Large Language Models for Hyperspectral Image Change Detection
+        summary: Developing multimodal models for hyperspectral remote sensing image understanding.
+        highlights:
+          - Multimodal large language models
+          - Remote sensing intelligence
+          - Change detection and vision-language alignment
+
+      - name: SAR-RGB Cross-modal Retrieval
+        summary: Exploring structural awareness and cross-modal representation learning between heterogeneous remote sensing images.
+        highlights:
+          - CLIP-based alignment
+          - Contrastive learning and strip convolution
+          - Cross-modal feature fusion
+
+      - name: Multi-Agent Literature Research Assistant
+        summary: Developing an intelligent research assistant based on a multi-agent architecture.
+        highlights:
+          - Retrieval, analysis, and generation agents
+          - MCP, A2A, RAG, and tool-augmented agents
+          - Zotero and Obsidian knowledge-base synchronization
+
+    Skills:
+      - name: Programming
+        level: Proficient
+        icon: fa-solid fa-code
+        keywords: "Python, C++, Java"
+
+      - name: Artificial Intelligence
+        level: Research
+        icon: fa-solid fa-brain
+        keywords: "PyTorch, Transformer, CLIP, LoRA, LLM fine-tuning"
+
+    Interests:
+      - name: Research
+        icon: fa-solid fa-microscope
+        keywords: "Multimodal LLMs, remote sensing foundation models, vision-language learning, hyperspectral change detection, SAR-RGB retrieval, agentic AI"
