@@ -4,7 +4,7 @@ title: research
 permalink: /research/
 description: Research directions in multimodal artificial intelligence and remote sensing.
 nav: true
-nav_order: 2
+nav_order: 3
 ---
 
 My research lies at the intersection of multimodal learning, remote sensing, and intelligent agents. I am particularly interested in building models that connect heterogeneous visual observations with language and structured reasoning.

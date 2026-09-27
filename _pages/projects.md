@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description: Selected research and engineering projects.
 nav: true
-nav_order: 4
+nav_order: 5
 horizontal: true
 ---
 

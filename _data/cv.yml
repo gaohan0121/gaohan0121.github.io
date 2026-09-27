@@ -1,6 +1,6 @@
 cv:
   name: Han Gao
-  headline: Undergraduate Researcher in Multimodal Artificial Intelligence
+  headline: Undergraduate Student in Software Engineering
   email: gaohan050121@outlook.com
   location: Xi'an, Shaanxi, China
   photo:
@@ -11,18 +11,25 @@ cv:
 
   sections:
     Profile:
-      - Undergraduate student in Software Engineering at Xi'an Jiaotong University, conducting research on multimodal large language models, remote sensing foundation models, vision-language learning, and agentic AI.
+      - Undergraduate student at Xi'an Jiaotong University. Incoming graduate student at Zhejiang University in 2027. Research interests include Multimodal Large Language Models (MLLMs), Hyperspectral Image Change Detection (HSICD), cross-modal retrieval, and Multi-Agent Systems (MAS).
 
     Education:
+      - institution: Zhejiang University
+        location: Ningbo, Zhejiang, China
+        url: https://www.zju.edu.cn/english/
+        area: Software Engineering
+        degree: M.Eng.
+        date: Starting 2027
+
       - institution: Xi'an Jiaotong University
         location: Xi'an, Shaanxi, China
         url: https://www.xjtu.edu.cn/
         area: Software Engineering
         degree: B.E.
-        start_date: 2023-09
-        end_date: present
+        start_date: 2023
+        end_date: 2027
         highlights:
-          - Undergraduate student in the School of Electronics and Information Engineering.
+          - School of Software Engineering.
 
     Research Experience:
       - company: Xi'an Jiaotong University
@@ -81,12 +88,25 @@ cv:
           - Integrated Zotero and Obsidian for research knowledge-base synchronization.
           - Built agent tracing for observable coordination and tool-use workflows.
 
-    Skills:
+    Honors:
+      - label: "2025"
+        details: University Second-Class Scholarship; Outstanding Student Leader
+
+      - label: "2024"
+        details: University Third-Class Scholarship; Outstanding Student Leader
+
+      - label: MCM/ICM
+        details: Honorable Mention
+
+    Technical Skills:
       - label: Programming
         details: Python, C++, Java
 
       - label: Artificial Intelligence
-        details: PyTorch, Transformers, CLIP, LoRA, supervised fine-tuning, parameter-efficient fine-tuning
+        details: PyTorch, CLIP, LoRA, LLM fine-tuning
 
-      - label: Research Areas
-        details: Multimodal large language models, remote sensing, vision-language learning, hyperspectral change detection, cross-modal retrieval, agentic AI
+      - label: Agent Development
+        details: MCP, A2A, RAG, tool-augmented agents
+
+      - label: English
+        details: CET-6 (647), CET-4 (661)
