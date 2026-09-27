@@ -139,6 +139,33 @@
     margin-bottom: 1.75rem;
   }
 
+  .publications ol.bibliography > li > .row {
+    display: grid;
+    grid-template-columns: 10rem minmax(0, 1fr);
+    gap: 2rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .publications ol.bibliography > li > .row > [class*="col"] {
+    width: auto;
+    max-width: none;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .publications .abbr figure {
+    width: 100%;
+    margin: 0.5rem 0 0;
+    aspect-ratio: 1;
+  }
+
+  .publications .abbr figure img.preview {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
   @media (max-width: 575.98px) {
     .profile.float-right {
       float: none !important;
@@ -153,6 +180,11 @@
       --news-date-width: 3.1rem;
       --news-column-gap: 2rem;
       --news-axis-left: 4.1rem;
+    }
+
+    .publications ol.bibliography > li > .row {
+      grid-template-columns: 7rem minmax(0, 1fr);
+      gap: 1rem;
     }
   }
 </style> <p>I am an undergraduate student in Software Engineering at Xi’an Jiaotong University. I have passed both the College English Test Band 4 (CET-4) and Band 6 (CET-6), with a CET-6 score of <strong>647</strong>.</p> <p>In 2027, I will begin graduate study in Software Engineering at the School of Software Technology, Zhejiang University (Ningbo).</p> <p>Currently I work on Multimodal Large Language Models (MLLMs) for Hyperspectral Image Change Detection (HSICD), Synthetic Aperture Radar (SAR)-RGB cross-modal retrieval, and Multi-Agent Systems (MAS).</p> <blockquote> <p>你目前看到的是一个未完成的版本，仅作为格式参考，不保证任何内容的真实性。</p> </blockquote> <h2 id="news">News</h2> <div class="academic-news" aria-label="Academic news"> <div class="academic-news-item"> <div class="academic-news-date">2027</div> <div class="academic-news-content"> <strong>Graduate study</strong> at the School of Software Technology, Zhejiang University (Ningbo).</div> </div> <div class="academic-news-item"> <div class="academic-news-date">2026</div> <div class="academic-news-content">Admitted to Zhejiang University through the recommended graduate admission pathway.</div> </div> <div class="academic-news-item"> <div class="academic-news-date">2025</div> <div class="academic-news-content">Received the University Second-Class Scholarship and was recognized as an Outstanding Student Leader.</div> </div> <div class="academic-news-item"> <div class="academic-news-date">2024</div> <div class="academic-news-content">Received the University Third-Class Scholarship and was recognized as an Outstanding Student Leader.</div> </div> <div class="academic-news-item"> <div class="academic-news-date">2023</div> <div class="academic-news-content">Began the B.E. program in Software Engineering at Xi'an Jiaotong University.</div> </div> </div> <div style="clear: both;"></div> <h2 id="education">Education</h2> <ul class="academic-list academic-education"> <li> <div class="academic-entry"> <strong>Zhejiang University</strong> <div>Software Engineering</div> <div class="academic-entry-meta">School of Software Technology, Ningbo · From 2027</div> </div> </li> <li> <div class="academic-entry"> <strong>Xi'an Jiaotong University</strong> <div>B.E. in Software Engineering</div> <div class="academic-entry-meta">School of Software Engineering · 2023-2027</div> </div> </li> </ul> <h2 id="honors">Honors</h2> <ul class="academic-list"> <li>University Second-Class Scholarship, 2025</li> <li>University Third-Class Scholarship, 2024</li> <li>Outstanding Student Leader, 2024 and 2025</li> <li>Honorable Mention, Mathematical Contest in Modeling/Interdisciplinary Contest in Modeling (MCM/ICM)</li> </ul> <h2 id="research-interests">Research Interests</h2> <ul class="academic-list"> <li>Multimodal Large Language Models (MLLMs)</li> <li>Remote Sensing Foundation Models (RSFMs)</li> <li>Vision-Language Learning (VLL)</li> <li>Hyperspectral Image Change Detection (HSICD)</li> <li>Synthetic Aperture Radar (SAR)-RGB Cross-modal Retrieval</li> <li>Agentic Artificial Intelligence (Agentic AI) and Multi-Agent Systems (MAS)</li> </ul> </div> <h2> <a href="/publications/" style="color: inherit">selected publications</a> </h2> <div class="publications"> <ol class="bibliography"> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">Under Review</abbr> <figure> <picture> <img src="/assets/img/publication_preview/hsicd-preview-square.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="hsicd-preview-square.png" data-zoomable loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> <div id="gao_hsicd" class="col-sm-8"> <div class="title">HSICD: Multimodal Large Language Model for Hyperspectral Image Change Detection</div> <div class="author"> <em>Han Gao</em> and others </div> <div class="periodical"> 2026 </div> <div class="periodical"> IEEE Geoscience and Remote Sensing Magazine, under review </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@unpublished</span><span class="p">{</span><span class="nl">gao_hsicd</span><span class="p">,</span>
